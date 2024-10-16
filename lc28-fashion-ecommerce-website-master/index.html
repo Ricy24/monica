@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!-- ====== Boxicons ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== Swiper CSS ====== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Velamen</title>
+  </head>
+  <body>
+  <!-- ====== Header ====== -->
+<header class="header">
+  <!-- ====== Navigation ====== -->
+  <nav class="navbar">
+    <div class="row container d-flex">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo de Velamen" />
+      </div>
+
+      <div class="nav-list d-flex">
+        <a href="#inicio">Inicio</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#Coleccion">Colección</a>
+        <a href="#sobre-nosotros">Acerca de Nosotros</a>
+        <div class="close">
+          <i class="bx bx-x"></i>
+        </div>
+        <a class="user-link" href="#login">Iniciar Sesión</a>
+      </div>
+
+          <div class="icons d-flex">
+            <div class="icon d-flex"><i class="bx bx-search"></i></div>
+            <div class="icon user-icon d-flex">
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="icon d-flex">
+              <i class="bx bx-bell"></i>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ====== Hero Area ====== -->
+      <div class="hero">
+        <div class="row container d-flex">
+          <div class="col">
+            <span class="subtitle">Oferta Limitada de Invierno</span>
+            <h1>Vela<span class="i">i</span>men</h1>
+            <p>DISFRUTA EL MEJOR DESCANSO</p>
+
+            <button class="btn">Descubre Ahora!</button>
+          </div>
+          <img src="./img/incio.png" alt="" />
+        </div> 
+      </div>
+    </header>
+<!-- ====== Colección ====== -->
+<section id="Coleccion"class="section collection">
+  <div class="title">
+      <span>Categorias</span>
+      <h2>Nuestra Colección Destacada</h2>
+  </div>
+  <div class="filters d-flex">
+      <div data-filter="Pijamas" onclick="filterProducts('Pijamas')">Pijamas</div>
+      <div data-filter="Accesorios" onclick="filterProducts('Accesorios')">Accesorios</div>
+      <div data-filter="Ropa de Cama" onclick="filterProducts('Ropa de Cama')">Ropa de Cama</div>
+      <div data-filter="Zapatillas" onclick="filterProducts('Zapatillas')">Zapatillas</div>
+  </div>
+
+  <div class="products container">
+      <div class="swiper mySwiper" id="products">
+          <!-- Pijamas -->
+          <div class="swiper-slide product" data-category="Pijamas">
+              <div class="top d-flex">
+                  <img src="./img/pijama-1.png" alt="Pijama 1" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Pijama de Algodón Estampada</h4>
+                  <div class="d-flex">
+                      <div class="price">$50.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="swiper-slide product" data-category="Pijamas">
+              <div class="top d-flex">
+                  <img src="./img/pijama-bebe-mama.png" alt="Pijama de Bebé y Mamá" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Pijama de Bebé y Mamá</h4>
+                  <div class="d-flex">
+                      <div class="price">$75.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide product" data-category="Pijamas">
+              <div class="top d-flex">
+                  <img src="./img/pijama-harry-potter.png" alt="Pijama de Harry Potter" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Pijama de Harry Potter</h4>
+                  <div class="d-flex">
+                      <div class="price">$60.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Accesorios -->
+          <div class="swiper-slide product" data-category="Accesorios">
+              <div class="top d-flex">
+                  <img src="./img/accesorio-1.png" alt="Accesorio 1" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Antifaz de Sueño</h4>
+                  <div class="d-flex">
+                      <div class="price">$15.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Ropa de Cama -->
+          <div class="swiper-slide product" data-category="Ropa de Cama">
+              <div class="top d-flex">
+                  <img src="./img/ropa-cama-1.png" alt="Ropa de Cama 1" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Juego de Sábanas de Microfibra</h4>
+                  <div class="d-flex">
+                      <div class="price">$100.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Zapatillas -->
+          <div class="swiper-slide product" data-category="Zapatillas">
+              <div class="top d-flex">
+                  <img src="./img/zapatilla-1.png" alt="Zapatilla 1" />
+                  <div class="icon d-flex">
+                      <i class="bx bxs-heart"></i>
+                  </div>
+              </div>
+              <div class="bottom">
+                  <h4>Zapatillas de Casa</h4>
+                  <div class="d-flex">
+                      <div class="price">$30.000</div>
+                      <div class="rating">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<script>
+  function filterProducts(category) {
+      const products = document.querySelectorAll('.swiper-slide.product');
+      products.forEach(product => {
+          if (product.getAttribute('data-category') === category || category === '') {
+              product.style.display = 'block';
+          } else {
+              product.style.display = 'none';
+          }
+      });
+  }
+</script>
+
+
+
+    <!-- ====== Nuevas Llegadas ====== -->
+<section class="section new-arrival">
+  <div class="title">
+    <span>NUEVAS LLEGADAS</span>
+    <h2>Última Colección de Pijamas</h2>
+  </div>
+
+  <div class="row container">
+    <div class="col col-1">
+      <img src="./images/poster-1.png" alt="Pijama de Seda" />
+      <h3>
+        Tendencias 2024 <br />
+        Pijamas de Seda Lujosos
+      </h3>
+    </div>
+    <div class="col col-2">
+      <img src="./images/poster-2.png" alt="Pijama de Algodón" />
+      <h3>
+        Tendencias 2024 <br />
+        Pijamas de Algodón Cómodos
+      </h3>
+    </div>
+    <div class="col col-3">
+      <img src="./img/poster.png" alt="Pijama de Franela" />
+      <h3>
+        Tendencias 2024 <br />
+        Pijamas de Franela Suaves <br />
+        <span>Descubre Más:</span>
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====== Categories ====== -->
+<section id="tienda" class="section categories">
+  <div class="title">
+    <span>Tienda</span>
+    <h2>2024</h2>
+  </div>
+
+  <div class="products container">
+    <!-- Pijamas -->
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-1.png" alt="Pijama 1" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Algodón Estampada</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$50.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-2.png" alt="Pijama 2" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Satén con Encaje</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$70.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-gris.png" alt="Pijama de Peluche Gris" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Peluche Gris</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$65.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-tiger.png" alt="Pijama de Tiger" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Tiger</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$55.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-caricaturas.png" alt="Pijama de Caricaturas" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Caricaturas</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$45.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-bebe-mama.png" alt="Pijama de Bebé y Mamá" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Bebé y Mamá</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$75.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/pijama-harry-potter.png" alt="Pijama de Harry Potter" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Pijama de Harry Potter</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$60.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accesorios -->
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/accesorio-1.png" alt="Accesorio 1" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Antifaz de Sueño</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$15.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ropa de Cama -->
+    <div class="product">
+      <div class="top d-flex">
+        <img src="./img/ropa-cama-1.png" alt="Ropa de Cama 1" />
+        <div class="icon d-flex">
+          <i class="bx bxs-heart"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="d-flex">
+          <h4>Juego de Sábanas de Microfibra</h4>
+          <a href="#" class="btn cart-btn">Carrito</a> <!-- Botón decorativo -->
+        </div>
+        <div class="d-flex">
+          <div class="price">$80.000</div>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ====== Statistics ====== -->
+<section class="section statistics">
+  <div class="title">
+    <span>ESTADÍSTICAS</span>
+    <h2>Nuestras Estadísticas</h2>
+  </div>
+
+  <div class="row container">
+    <div class="col">
+      <div class="icon">
+        <i class="bx bxs-check-square"></i>
+      </div>
+      <h3>Sistema de Pedidos Fácil</h3>
+      <p>Ofrecemos un sistema de pedidos intuitivo y fácil de usar para que compres tus pijamas sin complicaciones.</p>
+    </div>
+    <div class="col">
+      <div class="icon">
+        <i class="bx bxs-user"></i>
+      </div>
+      <h3>Entrega Puntual</h3>
+      <p>Garantizamos la entrega de tus pijamas a tiempo, para que estés listo para disfrutar de tus noches de descanso.</p>
+    </div>
+    <div class="col">
+      <div class="icon">
+        <i class="bx bxs-dollar-circle"></i>
+      </div>
+      <h3>Garantía de Devolución de Dinero</h3>
+      <p>Si no estás satisfecho con tu compra, ofrecemos una garantía de devolución de dinero.</p>
+    </div>
+    <div class="col">
+      <div class="icon">
+        <i class="bx bxs-user"></i>
+      </div>
+      <h3>Soporte al Cliente 24/7</h3>
+      <p>Nuestro equipo de atención al cliente está disponible las 24 horas del día, los 7 días de la semana para ayudarte.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ====== Blogs ====== -->
+<section class="section blog">
+  <div class="title">
+    <span>BLOGS</span>
+    <h2>Últimas Noticias</h2>
+  </div>
+
+  <div class="row container">
+    <div class="col">
+      <div class="top">
+        <img src="./img/tendencia2.png" alt="Pijamas Tendencia" />
+      </div>
+      <div class="bottom">
+        <h3>Tendencias de Pijamas</h3>
+        <h4>
+          Descubre las últimas tendencias en pijamas para que tengas un estilo único incluso en casa.
+        </h4>
+        <span>15 de octubre de 2024</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="top">
+        <img src="./img/tendencia3.png" alt="Consejos de Estilo" />
+      </div>
+      <div class="bottom">
+        <h3>Consejos de Estilo</h3>
+        <h4>
+          Aprende a combinar tus pijamas con accesorios para una noche de descanso con estilo.
+        </h4>
+        <span>15 de octubre de 2024</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="top">
+        <img src="./img/cuidado.png" alt="Cuidado de los Pijamas" />
+      </div>
+      <div class="bottom">
+        <h3>Cuidado de tus Pijamas</h3>
+        <h4>
+          Consejos prácticos para mantener tus pijamas como nuevos durante más tiempo.
+        </h4>
+        <span>15 de octubre de 2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- ====== Footer ====== -->
+<footer class="footer">
+  <div class="row container">
+    <div class="col">
+      <div class="logo d-flex">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <p>
+        Velamen ofrece la mejor selección de pijamas <br />
+        para un descanso cómodo y elegante.
+      </p>
+      <div class="icons d-flex">
+        <div class="icon d-flex">
+
+          <a href="https://www.facebook.com/profile.php?id=61560308371224">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        </div>
+        <a href="https://www.instagram.com/velamen.pjm/profilecard/?igsh=dzQwcTB5dHh6NXo5">
+        <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+      </a>
+      </div>
+      <p class="color">
+        Copyrights 2021 <br />
+        @Velamen
+      </p>
+    </div>
+    <div class="col">
+      <div>
+        <h4>Producto</h4>
+        <a href="">Precios</a>
+        <a href="">Ubicaciones</a>
+        <a href="">Blog</a>
+      </div>
+      <div>
+        <h4>Categoría</h4>
+        <a href="">Pijamas de Hombre</a>
+        <a href="">Pijamas de Mujer</a>
+        <a href="">Pijamas para Niños</a>
+        <a href="">Nuevas Colecciones</a>
+      </div>
+      <div>
+        <h4>Mi Cuenta</h4>
+        <a href="">Mi Cuenta</a>
+        <a href="">Descuentos</a>
+        <a href="">Devoluciones</a>
+        <a href="">Historial de Pedidos</a>
+      </div>
+      <div>
+        <h4>Contáctanos</h4>
+        <div class="d-flex">
+          <div class="icon"><i class="bx bxs-map"></i></div>
+          <span>Bogotá, Colombia</span>
+        </div>
+        <div class="d-flex">
+          <div class="icon"><i class="bx bxs-envelope"></i></div>
+          <span>info@velamen.com</span>
+        </div>
+        <div class="d-flex">
+          <div class="icon"><i class="bx bxs-phone"></i></div>
+          <span>+456 789 789 001</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- ====== Login and Signup Form ====== -->
+    <div class="user-form">
+      <div class="close-form d-flex">
+        <i class="bx bx-x"></i>
+      </div>
+      <div class="form-wrapper container">
+        <!-- Inicio de Sesión -->
+        <div class="user login">
+          <div class="img-box">
+            <img src="./images/login.svg" alt="Imagen de inicio de sesión" />
+          </div>
+          <div class="form-box">
+            <div class="top">
+              <p>
+                ¿No eres miembro?
+                <span data-id="#ff0066">Regístrate ahora</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>¡Hola de nuevo!</h2>
+                <p>Bienvenido de nuevo, te hemos extrañado.</p>
+                <input type="text" placeholder="Ingresa tu nombre de usuario" />
+                <div>
+                  <input type="password" placeholder="Contraseña" />
+                  <div class="icon form-icon">
+                    <!-- Icono de contraseña -->
+                  </div>
+                </div>
+                <span>Recuperar contraseña</span>
+                <input type="submit" value="Iniciar sesión" />
+              </div>
+              <div class="form-control">
+                <p>O continua con</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="Buscar" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="Apple" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="Facebook" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="GitHub" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <!-- Registro -->
+        <div class="user signup">
+          <div class="form-box">
+            <div class="top">
+              <p>
+                ¿Ya eres miembro?
+                <span data-id="#1a1aff">Inicia sesión ahora</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>¡Bienvenido a Velamen!</h2>
+                <p>Es un placer tenerte.</p>
+                <input type="email" placeholder="Ingresa tu correo electrónico" />
+                <div>
+                  <input type="password" placeholder="Contraseña" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="Mostrar contraseña" />
+                  </div>
+                </div>
+                <div>
+                  <input type="password" placeholder="Confirma tu contraseña" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="Mostrar contraseña" />
+                  </div>
+                </div>
+                <input type="submit" value="Registrar" />
+              </div>
+              <div class="form-control">
+                <p>O continua con</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="Buscar" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="Apple" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="Facebook" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="GitHub" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="img-box">
+            <img src="./images/trial.svg" alt="Imagen de prueba" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
