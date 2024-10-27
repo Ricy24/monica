@@ -30,6 +30,11 @@
   outline: none;
 }
 
+.logo img {
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
